@@ -1,0 +1,15 @@
+{
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "quard8/flask-mesos:0.2"
+    }
+  },
+  "id": "mesos-flask",
+  "instances": "1",
+  "cpus": "0.5",
+  "mem": "128",
+  "uris": [],
+  "cmd": "python /app/app.py $PORT0",
+  "ports": [6666]
+}
